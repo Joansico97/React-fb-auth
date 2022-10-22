@@ -1,4 +1,4 @@
-# Zemoga App
+# React Firebase Auth
 
 _Esta fue una aplicación realizada en forma de prueba técnica para el puesto de desarrollador React_
 
@@ -24,6 +24,9 @@ _2) Localiza la carpeta donde fue descargado el repositorio e importala dentro d
 _3) Si el editor de código que utilizas es visual studio code, abre la terminal del editor y corre el comando npm i_
 
 _4) Si el editor de código que utilizas no es visual studio code, abre una ventana de terminal, navega hasta la carpeta del proyecto y corre el comando npm i_
+
+_5) posteriormente se debe correr el comando npm run dev desde la terminal y abrir el puerto http://127.0.0.1 para visualizar el sitio en modo de desarrollo_
+
 
 
 ## Built With 🛠️
