@@ -13,7 +13,7 @@ export const PageRouter = () => {
       <Routes>
         <Route path='/home' element={<HomePage />} />
         <Route path='/posts' element={<PostsPage />} />
-        <Route path='/*' element={<Navigate to='/home' />} />
+        <Route path='/' element={<Navigate to='/home' />} />
       </Routes>
     </>
   );

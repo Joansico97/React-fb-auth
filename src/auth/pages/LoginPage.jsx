@@ -48,57 +48,63 @@ export const LoginPage = () => {
   return (
     <>
       <div className='login_container'>
+        <div className='formas-container'></div>
         <h1>Bienvenido</h1>
+        <h3 className='title'>Inicia sesión</h3>
         <div className='form_background'>
           <form onSubmit={onSubmit}>
-            <input
-              type={'email'}
-              className='form-control'
-              placeholder='john.doe@mail.com'
-              name='email'
-              value={email}
-              onChange={onInputChange}
-            />
+            <div>
+              <input
+                type={'email'}
+                className='form-control'
+                placeholder='john.doe@mail.com'
+                name='email'
+                value={email}
+                onChange={onInputChange}
+              />
+            </div>
+            <div>
+              <input
+                type={'password'}
+                className='form-control'
+                placeholder='password'
+                name='password'
+                value={password}
+                onChange={onInputChange}
+              />
+            </div>
             <br />
-            <input
-              type={'password'}
-              className='form-control'
-              placeholder='password'
-              name='password'
-              value={password}
-              onChange={onInputChange}
-            />
+            <div>
+              <button
+                disabled={isAuthenticating}
+                className='btn_auth'
+                onClick={onGoogleSignIn}
+              >
+                Google
+              </button>
+              <button
+                disabled={isAuthenticating}
+                className='btn_auth'
+                onClick={onFacebookSignIn}
+              >
+                Facebook
+              </button>
+            </div>
             <br />
-            <a href='/register'> ¿Sin cuenta todavía? </a>
+            <div>
+              <button
+                disabled={isAuthenticating}
+                type='sumit'
+                className='btn login'
+              >
+                login
+              </button>
+            </div>
             <br />
-            <ul className='auth_zone'>
-              <li>
-                <button
-                  disabled={isAuthenticating}
-                  className='btn_auth'
-                  onClick={onGoogleSignIn}
-                >
-                  Google
-                </button>
-              </li>
-              <li>
-                <button
-                  disabled={isAuthenticating}
-                  className='btn_auth'
-                  onClick={onFacebookSignIn}
-                >
-                  Facebook
-                </button>
-              </li>
-            </ul>
-            <button
-              disabled={isAuthenticating}
-              type='sumit'
-              className='btn login'
-            >
-              login
-            </button>
           </form>
+          <div>
+            <a href='/register'> ¿Sin cuenta todavía? </a>
+          </div>
         </div>
       </div>
     </>

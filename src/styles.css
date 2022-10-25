@@ -64,6 +64,21 @@ body {
   border: 2px solid #232323;
 }
 
+/* .input-field{
+  max-width: 380px;
+  height: 55px;
+  margin: 10px 0;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 .4rem;
+} */
+
+.title {
+  font-size: 2.2rem;  
+  margin-bottom: 10px;
+}
+
 .titulo1{
   font-size: 45.98px;
   font-weight: 300;
@@ -276,6 +291,10 @@ body {
   padding: 20%;
   text-align: center;
   align-items: center;
+  position: relative;
+  /* width: 100%; */
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .form_background {
@@ -310,15 +329,12 @@ body {
   text-align: end;
 }
 
-.form-control{
-  margin: 10px;
-}
-
 .label_form {
   color: #0E0E0E;
 }
 
 .form-control {
+  margin: 10px;
   height: 20px;
   width: 20rem;
   padding: 5px;
